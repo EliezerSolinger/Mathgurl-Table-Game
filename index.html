@@ -216,7 +216,7 @@
               let valor_celula2=$(`#celula-${x}-${y}`).val();
               if(valor_celula2.length==0) continue;
               console.log(valor,valor_celula2,calcula_distancia(x,y,cx,cy)); 
-              if(parseInt(valor)==parseInt(valor_celula2) && calcula_distancia(x,y,cx,cy)<=1 ){
+              if(parseInt(valor)==parseInt(valor_celula2) && calcula_distancia(x,y,cx,cy)<=parseInt(valor) ){
                   pinta_celula(cx,cy,"invalid"); 
                   return;
               }
